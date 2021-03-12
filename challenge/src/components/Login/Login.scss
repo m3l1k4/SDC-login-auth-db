@@ -1,0 +1,133 @@
+@import "../../mixins.scss";
+
+.login-form {
+    background-color: #f1f6fa;
+    
+   
+    @include tablet {
+        margin: 0 24px;
+    }
+
+    @include desktop {
+        margin: 0 120px;
+    }
+    &__section {
+        background-color: #f1f6fa;
+
+        @include mobile{
+            padding: 2rem;
+        }
+
+        @include tablet {
+            padding: 5rem;
+        }
+
+        @include desktop {
+            padding: 3rem;
+           width: 500px;
+        }
+
+        &--header {
+            font-family: "Arial";
+            color: #323232;
+
+            @include mobile {
+                margin-bottom: 32px;
+                margin-left: 16px;
+            }
+        }
+
+        @include tablet {
+            margin-left: 0;
+        }
+    }
+
+    &__form {
+        &--body {
+            @include desktop {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__field {
+
+             @include desktop{
+                 width: 500px;
+             }
+           
+                &--title {
+                    font-family: "Arial";
+                    color: #003a8c;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin: 0;
+                }
+
+                &--login-email {
+                    resize: none;
+                    border: 1px solid #ffffff;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    background-color: #ffffff;
+                    height: 48px;
+                    @include mobile {
+                        width: 100%;
+                        margin-bottom: 24px;
+                    }
+                }
+
+                &--login-pwd {
+                    resize: none;
+                    border: 1px solid #ffffff;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    background-color: #ffffff;
+                    height: 48px;
+                    @include mobile {
+                        width: 100%;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+
+        &--options {
+            display: flex;
+
+            @include mobile {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            @include tablet {
+                flex-direction: row-reverse;
+                align-items: center;
+               
+                justify-content: center;
+            }
+
+            @include desktop {
+         
+              
+                margin-top: 0px;
+            }
+
+            &__button {
+                background-color: #1890ff;
+                color: #ffffff;
+                font-family: "Avenir-Next-Demi";
+                border-radius: 4px;
+                font-size: 16px;
+                line-height: 24px;
+                height: 48px;
+                border: 0px;
+
+                @include mobile {
+                    width: 100%;
+                    margin-top: 32px;
+                }
+
+                
+            }
+        }
+    }
+}
