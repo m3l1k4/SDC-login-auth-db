@@ -11,16 +11,13 @@ class App extends React.Component {
       <Router>
 
         <div className="App">
-          <Route exact path="/loginpage">
-            <Login />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="vehicles">
-            <Vehicles/>
-          </Route>
 
+          <Route exact path="/">
+            <Login/>
+          </Route>
+          <Route exact path="/vehicles" >
+           <Vehicles/>
+          </Route>
 
         </div>
       </Router>
