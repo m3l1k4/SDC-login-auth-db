@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "make": "honda",
+      "model": "civic",
+      "year": 2009,
+      "colour": "silver",
+      "location_id": 4,
+      "location_description": "Downtown Vancouver - Modo Office"
+    },
+    {
+      "id": 2,
+      "make": "ford",
+      "model": "focus",
+      "year": 2015,
+      "colour": "navy",
+      "location_id": 7,
+      "location_description": "Burnaby - Metrotown Towers"
+    }
+  ]
