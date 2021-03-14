@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import './Vehicles.scss'
 
 class App extends React.Component {
 
@@ -20,12 +21,16 @@ class App extends React.Component {
 
     return (
       this.state.vehicles.map((vehicle) => {
-        return <div key={vehicle.id} className="card">
-          <div className="container">
-            <p>Vehicle #{vehicle.id}</p>
-            <h2>{vehicle.make} {vehicle.model}</h2>
-            <p>{vehicle.year} {vehicle.colour}</p>
-            <p>{vehicle.location_description}</p>
+        return <div key={vehicle.id} >
+          <div >
+            <div className="car-info">
+              <p>Vehicle #{vehicle.id}</p>
+              <h2>{vehicle.make} {vehicle.model}</h2>
+              <p>{vehicle.year} {vehicle.colour}</p>
+              <p>{vehicle.location_description}</p>
+
+            </div>
+
           </div>
         </div>
       })

@@ -12,11 +12,16 @@ class App extends React.Component {
 
         <div className="App">
 
-          <Route exact path="/">
-            <Login/>
+          <Route exact path="/login">
+            <Login />
           </Route>
           <Route exact path="/vehicles" >
-           <Vehicles/>
+            <div className="gallary">
+              <div className="gallary__grid">
+                <Vehicles />
+              </div>
+
+            </div>
           </Route>
 
         </div>

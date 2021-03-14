@@ -1,1 +1,21 @@
-//
+@import "../../mixins.scss";
+
+.car-info {
+    background-color: white;
+
+    @include mobile {
+        width: 288px;
+        height: 162px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+   
+    @include desktop {
+        width: 300px;
+        height: 161px;
+        flex-basis: 10%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,24 @@
+.car-info {
+  background-color: white;
+}
+
+@media (min-width: 320px) {
+  .car-info {
+    width: 288px;
+    height: 162px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .car-info {
+    width: 300px;
+    height: 161px;
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=Vehicles.css.map */
