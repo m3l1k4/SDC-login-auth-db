@@ -1,32 +1,26 @@
 @import "../../mixins.scss";
 
-.login-form {
+.login-wrap {
     background-color: #f1f6fa;
-    
-   
-    @include tablet {
-        margin: 0 24px;
-    }
+    // width: 200px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
 
-    @include desktop {
-        margin: 0 120px;
-    }
+.login-form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     &__section {
-        background-color: #f1f6fa;
-
-        @include mobile{
-            padding: 2rem;
-        }
-
-        @include tablet {
-            padding: 5rem;
-        }
-
-        @include desktop {
-            padding: 3rem;
-           width: 500px;
-        }
-
         &--header {
             font-family: "Arial";
             color: #323232;
@@ -43,40 +37,32 @@
     }
 
     &__form {
+        font-family: "Arial";
         &--body {
-            @include desktop {
-                display: flex;
-                justify-content: space-between;
+            @include mobile {
+                width: 250px;
             }
 
-            &__field {
+            @include tablet {
+                width: 400px;
+            }
 
-             @include desktop{
-                 width: 500px;
-             }
-           
+            @include desktop {
+                width: 800px;
+            }
+            &__field {
                 &--title {
-                    font-family: "Arial";
                     color: #003a8c;
                     font-size: 14px;
                     line-height: 22px;
-                    margin: 0;
-                }
+                    margin-bottom: 1rem;
 
-                &--login-email {
-                    resize: none;
-                    border: 1px solid #ffffff;
-                    box-sizing: border-box;
-                    border-radius: 4px;
-                    background-color: #ffffff;
-                    height: 48px;
-                    @include mobile {
-                        width: 100%;
-                        margin-bottom: 24px;
+                    @include desktop {
+                        font-size: 20px;
                     }
                 }
 
-                &--login-pwd {
+                &--login {
                     resize: none;
                     border: 1px solid #ffffff;
                     box-sizing: border-box;
@@ -101,22 +87,20 @@
             @include tablet {
                 flex-direction: row-reverse;
                 align-items: center;
-               
+
                 justify-content: center;
             }
 
             @include desktop {
-         
-              
                 margin-top: 0px;
             }
 
             &__button {
                 background-color: #1890ff;
                 color: #ffffff;
-                font-family: "Avenir-Next-Demi";
+
                 border-radius: 4px;
-                font-size: 16px;
+
                 line-height: 24px;
                 height: 48px;
                 border: 0px;
@@ -124,9 +108,12 @@
                 @include mobile {
                     width: 100%;
                     margin-top: 32px;
+                    font-size: 16px;
                 }
 
-                
+                @include desktop {
+                    font-size: 24px;
+                }
             }
         }
     }

@@ -1,0 +1,166 @@
+.login-wrap {
+  background-color: #f1f6fa;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-form__section--header {
+  font-family: "Arial";
+  color: #323232;
+}
+
+@media (min-width: 320px) {
+  .login-form__section--header {
+    margin-bottom: 32px;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form__section {
+    margin-left: 0;
+  }
+}
+
+.login-form__form {
+  font-family: "Arial";
+}
+
+@media (min-width: 320px) {
+  .login-form__form--body {
+    width: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form__form--body {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-form__form--body {
+    width: 800px;
+  }
+}
+
+.login-form__form--body__field--title {
+  color: #003a8c;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .login-form__form--body__field--title {
+    font-size: 20px;
+  }
+}
+
+.login-form__form--body__field--login {
+  resize: none;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #ffffff;
+  height: 48px;
+}
+
+@media (min-width: 320px) {
+  .login-form__form--body__field--login {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.login-form__form--options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 320px) {
+  .login-form__form--options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .login-form__form--options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-form__form--options {
+    margin-top: 0px;
+  }
+}
+
+.login-form__form--options__button {
+  background-color: #1890ff;
+  color: #ffffff;
+  border-radius: 4px;
+  line-height: 24px;
+  height: 48px;
+  border: 0px;
+}
+
+@media (min-width: 320px) {
+  .login-form__form--options__button {
+    width: 100%;
+    margin-top: 32px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .login-form__form--options__button {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=Login.css.map */
