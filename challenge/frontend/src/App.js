@@ -1,37 +1,37 @@
 import React from "react";
-import { Route, Link, Redirect, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, Redirect, Switch, BrowserRouter as Router, BrowserRouter } from 'react-router-dom'
 import './App.css';
 import Login from './components/Login'
-import Home from './components/Home'
 import Vehicles from './components/Vehicles'
+import useToken from './components/useToken'
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
 
-        <div className="App">
+function App() {
+ 
 
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/vehicles" >
+  const { token, setToken } = useToken();
+  if (!token) {
+    return <Login setToken={setToken} path="/login" />
+  }
+  return (    
+  <div  className="App">
+    <BrowserRouter>
+        <Switch>
+          <Route  exact path="/" >
             <div className="gallary">
               <div className="gallary__grid">
                 <Vehicles />
               </div>
-
             </div>
           </Route>
+        </Switch>   
+    </BrowserRouter>
 
-        </div>
-      </Router>
+ </div>
+  )
 
-
-    )
-
-  }
 }
+// }
 
 
 export default App;
