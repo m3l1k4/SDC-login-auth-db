@@ -32,9 +32,6 @@ export default function Login({ setToken }) {
     return (
         <div className="login-wrap">
             <div className="login-form__section">
-
-
-
                 <form onSubmit={handleSubmit} className="login-form__form" id="submit-login">
                     <div className="login-form__form--body" >
 
